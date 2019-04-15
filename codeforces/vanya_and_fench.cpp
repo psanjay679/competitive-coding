@@ -7,9 +7,9 @@ using namespace std;
 int main()
 {
     ll n, k, d, l = 0;
-    
+
     cin >> n >> k;
-    
+
     rep(n)
     {
         cin >> d;
@@ -22,7 +22,7 @@ int main()
             l += 1;
         }
     }
-    
+
     cout << l << endl;
     return 0;
 }
