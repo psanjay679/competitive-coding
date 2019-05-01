@@ -10,7 +10,7 @@ typedef pair<ui, ui> pr;
 
 int main(){
     priority_queue<pr> pq;
-    unordered_map<pr> ump;
+    unordered_map<ui, ui> ump;
 
     ui n, m;
     cin >> n >> m;
@@ -24,7 +24,7 @@ int main(){
             ump[d] += 1;
         }
 
-        pq.push(make_pair(d, ump[d]));
+        pq.push(make_pair(ump[d], d));
 
         pr ghost = pq.top();
         cout << ghost.second << " " << ghost.first << endl;
